@@ -1,12 +1,468 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Nama Web - Komunitas UMKM</title>
     <link rel="stylesheet" href="./assets/output.css">
 </head>
-<body>
-    
+<body class="bg-slate-100 text-slate-800">
+    <div class="mx-auto min-h-screen max-w-[1220px] px-3 py-3 sm:px-6 sm:py-4 lg:px-8">
+        <div class="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+            <header class="border-b border-slate-200 bg-white">
+                <div class="flex items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8">
+                    <a href="#" class="flex items-center gap-3">
+                        <div class="flex h-10 w-10 items-end justify-center rounded-xl bg-gradient-to-br from-blue-500 to-emerald-400 p-1.5">
+                            <div class="flex h-full w-full items-end justify-between rounded-lg bg-white/90 px-1.5 pb-1">
+                                <span class="h-3 w-1.5 rounded-sm bg-blue-500"></span>
+                                <span class="h-5 w-1.5 rounded-sm bg-blue-500"></span>
+                                <span class="h-7 w-1.5 rounded-sm bg-blue-500"></span>
+                            </div>
+                        </div>
+                        <span class="text-xl font-black tracking-tight text-slate-900 sm:text-2xl">Nama Web</span>
+                    </a>
+
+                    <nav aria-label="Menu utama" class="hidden lg:block">
+                        <ul class="flex items-center gap-10 text-sm font-semibold text-slate-700">
+                            <li><a href="#" class="border-b-2 border-blue-600 pb-1 text-blue-600">Beranda</a></li>
+                            <li><a href="#" class="transition hover:text-blue-600">Jelajahi</a></li>
+                            <li><a href="#" class="transition hover:text-blue-600">Tentang</a></li>
+                            <li><a href="#" class="transition hover:text-blue-600">Kontak</a></li>
+                        </ul>
+                    </nav>
+
+                    <a href="#" class="hidden rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-blue-700 sm:inline-block">
+                        Gabung Sekarang
+                    </a>
+                </div>
+
+                <details class="px-4 py-2 lg:hidden">
+                    <summary class="cursor-pointer list-none text-sm font-semibold text-slate-700">Menu</summary>
+                    <nav aria-label="Menu mobile" class="pt-3">
+                        <ul class="space-y-2 text-sm font-semibold text-slate-700">
+                            <li><a href="#" class="block rounded-lg bg-blue-50 px-3 py-2 text-blue-600">Beranda</a></li>
+                            <li><a href="#" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Jelajahi</a></li>
+                            <li><a href="#" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Tentang</a></li>
+                            <li><a href="#" class="block rounded-lg px-3 py-2 hover:bg-slate-100">Kontak</a></li>
+                            <li><a href="#" class="mt-2 block rounded-lg bg-blue-600 px-3 py-2 text-center text-white">Gabung Sekarang</a></li>
+                        </ul>
+                    </nav>
+                </details>
+            </header>
+
+            <main class="bg-[radial-gradient(circle_at_20%_10%,rgba(59,130,246,0.09),transparent_42%),radial-gradient(circle_at_82%_14%,rgba(16,185,129,0.1),transparent_38%)] px-3 py-5 sm:px-6 sm:py-6 lg:px-8">
+                <section class="grid gap-8 rounded-2xl border border-slate-200 bg-slate-50 p-5 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:p-8">
+                    <article>
+                        <h1 class="max-w-xl text-3xl leading-tight font-black tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+                            Platform Komunitas &amp;<br>
+                            Marketplace <span class="text-emerald-600">UMKM</span>
+                        </h1>
+                        <p class="mt-4 max-w-xl text-base leading-relaxed text-slate-600 sm:mt-5 sm:text-lg">
+                            Hubungkan pelanggan dengan UMKM lokal. Cari toko terdekat, lihat katalog, atau kelola toko Anda dengan mudah.
+                        </p>
+
+                        <div class="mt-6 grid gap-3 sm:mt-7 sm:flex sm:flex-wrap sm:items-center sm:gap-4">
+                            <a href="#pelanggan" class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 sm:w-auto">
+                                Sebagai Pelanggan
+                                <span aria-hidden="true">-></span>
+                            </a>
+                            <a href="#pemilik" class="w-full rounded-xl border border-emerald-500 px-6 py-3 text-center text-sm font-semibold text-emerald-600 transition hover:bg-emerald-50 sm:w-auto">
+                                Sebagai Pemilik UMKM
+                            </a>
+                        </div>
+
+                        <section aria-label="Statistik platform" class="mt-7 grid gap-3 sm:mt-8 sm:grid-cols-3">
+                            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+                                <p class="text-xl font-black text-slate-900">10.000+</p>
+                                <p class="mt-1 text-sm text-slate-500">UMKM Terdaftar</p>
+                            </article>
+                            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+                                <p class="text-xl font-black text-slate-900">25.000+</p>
+                                <p class="mt-1 text-sm text-slate-500">Pengguna Aktif</p>
+                            </article>
+                            <article class="rounded-xl border border-slate-200 bg-white p-4 shadow-xs">
+                                <p class="text-xl font-black text-slate-900">50.000+</p>
+                                <p class="mt-1 text-sm text-slate-500">Produk Tersedia</p>
+                            </article>
+                        </section>
+                    </article>
+
+                    <aside aria-label="Panel ringkasan usaha" class="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5">
+                        <section class="rounded-xl bg-slate-50 p-4">
+                            <p class="text-sm font-bold text-slate-800">Ringkasan Toko</p>
+                            <div class="mt-3 grid gap-2 text-xs min-[430px]:grid-cols-3 sm:text-sm">
+                                <div class="rounded-lg bg-white p-3">
+                                    <p class="text-slate-500">Status</p>
+                                    <p class="mt-1 font-black text-emerald-600">Buka</p>
+                                    <p class="mt-1 text-slate-500">Sampai 21:00</p>
+                                </div>
+                                <div class="rounded-lg bg-white p-3">
+                                    <p class="text-slate-500">Katalog Aktif</p>
+                                    <p class="mt-1 font-black text-slate-900">48 Produk</p>
+                                    <p class="mt-1 text-slate-500">Siap dilihat</p>
+                                </div>
+                                <div class="rounded-lg bg-white p-3">
+                                    <p class="text-slate-500">Kontak Pelanggan</p>
+                                    <p class="mt-1 font-black text-slate-900">WhatsApp</p>
+                                    <p class="mt-1 text-slate-500">1 klik chat</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mt-4 rounded-xl bg-white p-4" aria-label="Akses pelanggan">
+                            <div class="flex items-center justify-between">
+                                <p class="text-sm font-bold text-slate-800">Akses Pelanggan</p>
+                                <span class="text-xs text-slate-500">Realtime</span>
+                            </div>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li class="rounded-lg bg-slate-50 px-3 py-2">Pelanggan bisa cari toko terdekat dari lokasi.</li>
+                                <li class="rounded-lg bg-slate-50 px-3 py-2">Pelanggan bisa filter berdasarkan kategori produk.</li>
+                                <li class="rounded-lg bg-slate-50 px-3 py-2">Katalog dapat dilihat tanpa checkout langsung.</li>
+                            </ul>
+                        </section>
+
+                        <section class="mt-4 rounded-xl bg-slate-50 p-4" aria-label="Status usaha">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-bold text-slate-800">Status Toko</p>
+                                    <p class="text-xs text-slate-500">Atur buka/tutup agar pelanggan tahu ketersediaan</p>
+                                </div>
+                                <div class="flex h-7 w-12 items-center rounded-full bg-blue-600 p-1">
+                                    <span class="ml-auto block h-5 w-5 rounded-full bg-white"></span>
+                                </div>
+                            </div>
+                            <a href="#" class="mt-3 block rounded-lg bg-emerald-600 px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-700">
+                                Chat via WhatsApp
+                            </a>
+                        </section>
+                    </aside>
+                </section>
+
+                <section id="pelanggan" class="mt-8 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+                    <div class="mb-6 max-w-2xl">
+                        <h2 class="text-3xl font-black tracking-tight text-slate-900">Untuk Pelanggan</h2>
+                        <p class="mt-3 text-slate-600">Temukan UMKM lokal yang Anda cari, lihat katalog produk mereka, dan hubungi langsung via WhatsApp.</p>
+                    </div>
+
+                    <div class="grid gap-4 md:grid-cols-2">
+                        <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-blue-100 p-2 text-2xl">📍</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Toko Terdekat</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Cari UMKM yang paling dekat dari lokasi Anda yang sedang buka.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-emerald-100 p-2 text-2xl">🗂️</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Filter Kategori</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Jelajahi katalog berdasarkan kategori produk yang Anda inginkan.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-blue-100 p-2 text-2xl">🟢</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Lihat Status Toko</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Ketahui apakah toko sedang buka atau tutup sebelum menghubungi.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-emerald-100 p-2 text-2xl">💬</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Chat via WhatsApp</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Tanyakan produk, stok, atau harga langsung ke pemilik toko.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="pemilik" class="mt-8 rounded-2xl border border-slate-200 bg-emerald-50 p-6 sm:p-8">
+                    <div class="mb-6 max-w-2xl">
+                        <h2 class="text-3xl font-black tracking-tight text-slate-900">Untuk Pemilik UMKM</h2>
+                        <p class="mt-3 text-slate-600">Kelola katalog produk Anda, atur status buka/tutup, dan terima kontak dari pelanggan melalui WhatsApp.</p>
+                    </div>
+
+                    <div class="grid gap-4 md:grid-cols-2">
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-blue-100 p-2 text-2xl">📦</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Kelola Katalog</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Tambah, edit, dan tampilkan produk Anda dengan mudah ke pelanggan.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-emerald-100 p-2 text-2xl">🟢</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Atur Status Toko</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Aktifkan atau tutup toko Anda secara real-time agar pelanggan tahu.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-blue-100 p-2 text-2xl">📍</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Lokasi Toko</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Tampilkan lokasi bisnis Anda agar mudah ditemukan pelanggan terdekat.</p>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="rounded-xl border border-slate-200 bg-white p-4">
+                            <div class="flex items-start gap-3">
+                                <div class="rounded-lg bg-emerald-100 p-2 text-2xl">📱</div>
+                                <div>
+                                    <h3 class="font-bold text-slate-900">Terima Chat WA</h3>
+                                    <p class="mt-1 text-sm text-slate-600">Pelanggan dapat menghubungi Anda langsung via WhatsApp tanpa ribet.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="mt-6">
+                    <div class="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+                        <h2 class="text-2xl font-black tracking-tight text-slate-900">UMKM Populer</h2>
+                        <a href="#" class="text-sm font-semibold text-blue-600 hover:text-blue-700">Lihat Semua -></a>
+                    </div>
+
+                    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+                        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+                            <div class="h-24 bg-[linear-gradient(120deg,#d4a373,#f5ebe0)]"></div>
+                            <div class="p-3">
+                                <h3 class="font-bold text-slate-900">Loka Craft</h3>
+                                <p class="text-sm text-slate-500">Kerajinan Tangan</p>
+                                <div class="mt-2 flex items-center justify-between text-xs">
+                                    <span class="text-amber-500">★ 4.8 (120)</span>
+                                    <a href="#" class="rounded-md bg-blue-50 px-2 py-1 font-semibold text-blue-600">Lihat Katalog</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+                            <div class="h-24 bg-[linear-gradient(120deg,#6f4e37,#d4a373)]"></div>
+                            <div class="p-3">
+                                <h3 class="font-bold text-slate-900">Kopi Nusantara</h3>
+                                <p class="text-sm text-slate-500">Minuman</p>
+                                <div class="mt-2 flex items-center justify-between text-xs">
+                                    <span class="text-amber-500">★ 4.7 (96)</span>
+                                    <a href="#" class="rounded-md bg-blue-50 px-2 py-1 font-semibold text-blue-600">Lihat Katalog</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+                            <div class="h-24 bg-[linear-gradient(120deg,#84a98c,#cad2c5)]"></div>
+                            <div class="p-3">
+                                <h3 class="font-bold text-slate-900">Green Haven</h3>
+                                <p class="text-sm text-slate-500">Tanaman Hias</p>
+                                <div class="mt-2 flex items-center justify-between text-xs">
+                                    <span class="text-amber-500">★ 4.7 (76)</span>
+                                    <a href="#" class="rounded-md bg-blue-50 px-2 py-1 font-semibold text-blue-600">Lihat Katalog</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs">
+                            <div class="h-24 bg-[linear-gradient(120deg,#c08497,#fbcfe8)]"></div>
+                            <div class="p-3">
+                                <h3 class="font-bold text-slate-900">Mona Fashion</h3>
+                                <p class="text-sm text-slate-500">Fashion</p>
+                                <div class="mt-2 flex items-center justify-between text-xs">
+                                    <span class="text-amber-500">★ 4.8 (150)</span>
+                                    <a href="#" class="rounded-md bg-blue-50 px-2 py-1 font-semibold text-blue-600">Lihat Katalog</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-xs sm:col-span-2 lg:col-span-1">
+                            <div class="h-24 bg-[linear-gradient(120deg,#94a3b8,#e2e8f0)]"></div>
+                            <div class="p-3">
+                                <h3 class="font-bold text-slate-900">DesignSpace</h3>
+                                <p class="text-sm text-slate-500">Jasa Digital</p>
+                                <div class="mt-2 flex items-center justify-between text-xs">
+                                    <span class="text-amber-500">★ 4.9 (88)</span>
+                                    <a href="#" class="rounded-md bg-blue-50 px-2 py-1 font-semibold text-blue-600">Lihat Katalog</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="mt-3 text-sm text-slate-500">
+                        Katalog hanya untuk dilihat pelanggan. Pemesanan dilakukan di luar aplikasi.
+                    </p>
+                </section>
+
+                <section class="mt-8">
+                    <h2 class="text-2xl font-black tracking-tight text-slate-900">Cara Bergabung &amp; Mulai Berjualan</h2>
+                    <p class="mt-2 text-sm text-slate-600">Khusus untuk pemilik UMKM yang ingin menjual:</p>
+                    <ol class="mt-4 grid gap-3 lg:grid-cols-5">
+                        <li class="rounded-xl border border-slate-200 bg-white p-4">
+                            <p class="text-xs font-bold text-blue-600">1. Daftar Akun</p>
+                            <p class="mt-2 text-sm text-slate-600">Buat akun gratis dalam hitungan menit.</p>
+                        </li>
+                        <li class="rounded-xl border border-slate-200 bg-white p-4">
+                            <p class="text-xs font-bold text-blue-600">2. Isi Data Usaha & Lokasi</p>
+                            <p class="mt-2 text-sm text-slate-600">Lengkapi informasi dan lokasi usahamu.</p>
+                        </li>
+                        <li class="rounded-xl border border-slate-200 bg-white p-4">
+                            <p class="text-xs font-bold text-blue-600">3. Tambah Produk</p>
+                            <p class="mt-2 text-sm text-slate-600">Unggah katalog produk untuk ditampilkan ke pelanggan.</p>
+                        </li>
+                        <li class="rounded-xl border border-slate-200 bg-white p-4">
+                            <p class="text-xs font-bold text-blue-600">4. Atur Status Toko</p>
+                            <p class="mt-2 text-sm text-slate-600">Set buka/tutup agar pelanggan tahu toko sedang aktif.</p>
+                        </li>
+                        <li class="rounded-xl border border-slate-200 bg-white p-4">
+                            <p class="text-xs font-bold text-blue-600">5. Terima Chat WA</p>
+                            <p class="mt-2 text-sm text-slate-600">Pelanggan hubungi toko lewat tombol WhatsApp.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="mt-8 rounded-2xl border border-slate-200 bg-white p-6 sm:p-8">
+                    <div class="max-w-2xl">
+                        <h2 class="text-2xl font-black tracking-tight text-slate-900">Tertarik Bergabung?</h2>
+                        <p class="mt-2 text-slate-600">Tinggalkan data Anda dan kami akan menghubungi untuk membantu proses pendaftaran Anda.</p>
+                    </div>
+
+                    <form class="mt-6 space-y-4 max-w-2xl">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-900">Anda Adalah</label>
+                            <div class="mt-2 flex gap-4">
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input 
+                                        type="radio" 
+                                        name="tipe_user" 
+                                        value="pelanggan"
+                                        class="h-4 w-4 border-slate-300 text-blue-600"
+                                    >
+                                    <span class="text-sm text-slate-900">Pelanggan</span>
+                                </label>
+                                <label class="flex items-center gap-2 cursor-pointer">
+                                    <input 
+                                        type="radio" 
+                                        name="tipe_user" 
+                                        value="pemilik"
+                                        class="h-4 w-4 border-slate-300 text-blue-600"
+                                    >
+                                    <span class="text-sm text-slate-900">Pemilik UMKM</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="nama" class="block text-sm font-semibold text-slate-900">Nama Lengkap</label>
+                                <input 
+                                    type="text" 
+                                    id="nama" 
+                                    name="nama" 
+                                    required
+                                    class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-500 transition focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                    placeholder="Nama Anda"
+                                >
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-semibold text-slate-900">Email</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    required
+                                    class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-500 transition focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                    placeholder="email@contoh.com"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid gap-4 sm:grid-cols-2">
+                            <div>
+                                <label for="nomor_wa" class="block text-sm font-semibold text-slate-900">Nomor WhatsApp</label>
+                                <input 
+                                    type="tel" 
+                                    id="nomor_wa" 
+                                    name="nomor_wa" 
+                                    required
+                                    class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-500 transition focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                    placeholder="0812 3456 7890"
+                                >
+                            </div>
+                            <div>
+                                <label for="kategori" class="block text-sm font-semibold text-slate-900">Kategori Usaha / Minat</label>
+                                <select 
+                                    id="kategori" 
+                                    name="kategori" 
+                                    required
+                                    class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 transition focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                >
+                                    <option value="">-- Pilih --</option>
+                                    <option value="makanan">Makanan & Minuman</option>
+                                    <option value="fashion">Fashion & Pakaian</option>
+                                    <option value="kerajinan">Kerajinan & Seni</option>
+                                    <option value="elektronik">Elektronik & Gadget</option>
+                                    <option value="jasa">Jasa & Digital</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="pesan" class="block text-sm font-semibold text-slate-900">Pesan (opsional)</label>
+                            <textarea 
+                                id="pesan" 
+                                name="pesan" 
+                                rows="3"
+                                class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-slate-900 placeholder-slate-500 transition focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                                placeholder="Jika pemilik UMKM, ceritakan tentang usaha Anda. Jika pelanggan, ada pertanyaan khusus?"
+                            ></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input 
+                                type="checkbox" 
+                                id="syarat" 
+                                name="syarat" 
+                                required
+                                class="mt-1 h-4 w-4 rounded border-slate-300 text-blue-600 transition focus:ring-blue-500"
+                            >
+                            <label for="syarat" class="text-sm text-slate-600">
+                                Saya setuju dengan syarat dan ketentuan serta menerima informasi terkait platform.
+                            </label>
+                        </div>
+
+                        <button 
+                            type="submit"
+                            class="w-full rounded-lg bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        >
+                            Daftar Sekarang
+                        </button>
+                    </form>
+                </section>
+
+                <footer class="mt-6 rounded-2xl bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 p-6 text-white">
+                    <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+                        <div>
+                            <h2 class="text-2xl font-black tracking-tight sm:text-3xl">Siap mengembangkan usahamu?</h2>
+                            <p class="mt-2 text-blue-100">Bergabung sekarang dan jadilah bagian dari komunitas UMKM yang terus bertumbuh.</p>
+                        </div>
+                        <div class="grid gap-3 sm:flex sm:flex-wrap">
+                            <a href="#" class="rounded-xl bg-white px-6 py-3 text-center text-sm font-semibold text-blue-700 transition hover:bg-blue-50">
+                                Gabung Sekarang
+                            </a>
+                            <a href="#" class="rounded-xl border border-white/60 px-6 py-3 text-center text-sm font-semibold text-white transition hover:bg-white/10">
+                                Pelajari Lebih Lanjut
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
