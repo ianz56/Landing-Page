@@ -1,24 +1,28 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="smooth-scroll">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OpenUMKM</title>
     <link rel="stylesheet" href="./assets/css/input.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body class="bg-slate-100 text-slate-800">
     <header
-      class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur-md"
+      class="sticky top-0 z-10 border-b border-slate-200 bg-white/80 backdrop-blur-md"
     >
       <div
-        class="mx-auto max-w-[1220px] flex items-center justify-between gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8"
+        class="mx-auto flex items-center gap-3 px-4 py-3 sm:gap-4 sm:px-6 lg:px-8"
       >
         <span
           class="text-xl font-black tracking-tight text-slate-900 sm:text-2xl"
           >OpenUMKM</span
         >
 
-        <nav aria-label="Menu utama" class="hidden lg:block">
+        <nav
+          aria-label="Menu utama"
+          class="hidden flex-1 justify-center lg:flex"
+        >
           <ul
             class="flex items-center gap-10 text-sm font-semibold text-slate-700"
           >
@@ -28,70 +32,85 @@
               >
             </li>
             <li>
-              <a href="#" class="transition hover:text-blue-600">Jelajahi</a>
+              <a href="#pemilik" class="transition hover:text-blue-600"
+                >Jelajahi</a
+              >
             </li>
             <li>
               <a href="#" class="transition hover:text-blue-600">Tentang</a>
             </li>
             <li>
-              <a href="#" class="transition hover:text-blue-600">Kontak</a>
-            </li>
-          </ul>
-        </nav>
-
-        <a
-          href="#"
-          class="hidden rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-blue-700 sm:inline-block"
-        >
-          Gabung Sekarang
-        </a>
-      </div>
-
-      <details class="px-4 py-2 lg:hidden">
-        <summary
-          class="cursor-pointer list-none text-sm font-semibold text-slate-700"
-        >
-          Menu
-        </summary>
-        <nav aria-label="Menu mobile" class="pt-3">
-          <ul class="space-y-2 text-sm font-semibold text-slate-700">
-            <li>
-              <a
-                href="#"
-                class="block rounded-lg bg-blue-50 px-3 py-2 text-blue-600"
-                >Beranda</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block rounded-lg px-3 py-2 hover:bg-slate-100"
-                >Jelajahi</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block rounded-lg px-3 py-2 hover:bg-slate-100"
-                >Tentang</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block rounded-lg px-3 py-2 hover:bg-slate-100"
+              <a href="#kontak" class="transition hover:text-blue-600"
                 >Kontak</a
               >
             </li>
-            <li>
-              <a
-                href="#"
-                class="mt-2 block rounded-lg bg-blue-600 px-3 py-2 text-center text-white"
-                >Gabung Sekarang</a
-              >
-            </li>
           </ul>
         </nav>
-      </details>
+
+        <div class="ml-auto flex items-center gap-3">
+          <a
+            href="#"
+            class="hidden rounded-xl bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow transition hover:bg-blue-700 sm:inline-block"
+          >
+            Gabung Sekarang
+          </a>
+
+          <!-- Burger mobile -->
+          <details class="relative lg:hidden">
+            <summary
+              class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-lg border border-slate-200 text-slate-700 transition hover:bg-slate-100"
+            >
+              <span class="sr-only">Buka menu mobile</span>
+              <i class="ri-menu-line text-lg"></i>
+            </summary>
+            <nav
+              aria-label="Menu mobile"
+              class="absolute right-0 top-12 z-50 w-56 rounded-xl border border-slate-200 bg-white p-3 shadow-lg"
+            >
+              <ul class="space-y-2 text-sm font-semibold text-slate-700">
+                <li>
+                  <a
+                    href="#"
+                    class="block rounded-lg bg-blue-50 px-3 py-2 text-blue-600"
+                    >Beranda</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#pemilik"
+                    class="block rounded-lg px-3 py-2 hover:bg-slate-100"
+                    >Jelajahi</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block rounded-lg px-3 py-2 hover:bg-slate-100"
+                    >Tentang</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#kontak"
+                    class="block rounded-lg px-3 py-2 hover:bg-slate-100"
+                    >Kontak</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="mt-2 block rounded-lg bg-blue-600 px-3 py-2 text-center text-white"
+                    >Gabung Sekarang</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </details>
+        </div>
+      </div>
     </header>
 
-    <main
-      class="bg-[radial-gradient(circle_at_20%_10%,rgba(59,130,246,0.09),transparent_42%),radial-gradient(circle_at_82%_14%,rgba(16,185,129,0.1),transparent_38%)] py-8"
-    >
+    <main>
       <section
         class="grid gap-8 rounded-2xl border border-slate-200 bg-slate-50 p-5 lg:grid-cols-[1.05fr_1fr] lg:items-center lg:p-8"
       >
@@ -200,9 +219,10 @@
             </div>
             <a
               href="#"
-              class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-3 py-2 text-center text-sm font-semibold text-white transition hover:bg-emerald-700"
+              class="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-3 py-2 text-center text-white transition hover:bg-emerald-700"
             >
-              <i class="ri-whatsapp-line text-white"></i> Chat via WhatsApp
+              <i class="ri-whatsapp-line text-white text-xl"></i> Chat via
+              WhatsApp
             </a>
           </section>
         </aside>
@@ -214,7 +234,7 @@
       >
         <div class="mb-6 max-w-2xl">
           <h2 class="text-3xl font-black tracking-tight text-slate-900">
-            Untuk Pelanggan
+            Untuk <span class="text-blue-600">Pelanggan</span>
           </h2>
           <p class="mt-3 text-slate-600">
             Temukan UMKM lokal yang Anda cari, lihat katalog produk mereka, dan
@@ -226,10 +246,10 @@
           <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-blue-100 p-2 text-2xl"
+                class="rounded-lg bg-emerald-100 p-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                <i class="ri-map-pin-line text-green-600"></i>
+                <i class="ri-map-pin-line text-emerald-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Toko Terdekat</h3>
@@ -242,10 +262,10 @@
           <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-emerald-100 p-2 text-2xl"
+                class="rounded-lg bg-emerald-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                🗂️
+                <i class="ri-dashboard-line text-emerald-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Filter Kategori</h3>
@@ -259,10 +279,10 @@
           <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-blue-100 p-2 text-2xl"
+                class="rounded-lg bg-emerald-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                🟢
+                <i class="ri-circle-fill text-emerald-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Lihat Status Toko</h3>
@@ -276,10 +296,10 @@
           <article class="rounded-xl border border-slate-200 bg-slate-50 p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-emerald-100 p-2 text-2xl"
+                class="rounded-lg bg-emerald-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                💬
+                <i class="ri-whatsapp-line text-emerald-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Chat via WhatsApp</h3>
@@ -294,11 +314,11 @@
 
       <section
         id="pemilik"
-        class="mt-8 rounded-2xl border border-slate-200 bg-emerald-50 p-6 sm:p-8"
+        class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8"
       >
         <div class="mb-6 max-w-2xl">
           <h2 class="text-3xl font-black tracking-tight text-slate-900">
-            Untuk Pemilik UMKM
+            Untuk <span class="text-blue-600">Pemilik UMKM</span>
           </h2>
           <p class="mt-3 text-slate-600">
             Kelola katalog produk Anda, atur status buka/tutup, dan terima
@@ -310,10 +330,10 @@
           <article class="rounded-xl border border-slate-200 bg-white p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-blue-100 p-2 text-2xl"
+                class="rounded-lg bg-blue-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                📦
+                <i class="ri-shopping-bag-3-line text-blue-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Kelola Katalog</h3>
@@ -327,10 +347,10 @@
           <article class="rounded-xl border border-slate-200 bg-white p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-emerald-100 p-2 text-2xl"
+                class="rounded-lg bg-emerald-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                🟢
+                <i class="ri-circle-fill text-emerald-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Atur Status Toko</h3>
@@ -344,10 +364,10 @@
           <article class="rounded-xl border border-slate-200 bg-white p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-blue-100 p-2 text-2xl"
+                class="rounded-lg bg-blue-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                📍
+                <i class="ri-map-pin-line text-blue-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Lokasi Toko</h3>
@@ -361,10 +381,10 @@
           <article class="rounded-xl border border-slate-200 bg-white p-4">
             <div class="flex items-start gap-3">
               <div
-                class="rounded-lg bg-emerald-100 p-2 text-2xl"
+                class="rounded-lg bg-emerald-100 py-2 px-3 text-2xl"
                 aria-hidden="true"
               >
-                📱
+                <i class="ri-whatsapp-line text-emerald-600"></i>
               </div>
               <div>
                 <h3 class="font-bold text-slate-900">Terima Chat WA</h3>
@@ -551,7 +571,7 @@
           </p>
         </div>
 
-        <form class="mt-6 space-y-4 max-w-2xl">
+        <form id="kontak" class="mt-6 space-y-4 max-w-2xl">
           <fieldset>
             <legend class="block text-sm font-semibold text-slate-900">
               Anda Adalah
@@ -737,4 +757,5 @@
       </div>
     </footer>
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>

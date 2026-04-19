@@ -8,7 +8,6 @@ export default defineConfig({
     rollupOptions: {
       input: './index.html',
     },
-    cssMinify: false,
   },
   server: {
     port: 5173,
