@@ -1,10 +1,2 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import "remixicon/fonts/remixicon.css";
-@import "tailwindcss";
-
-@layer base {
-  [class^="ri-"],
-  [class*=" ri-"] {
-    font-family: 'remixicon', sans-serif !important;
-  }
-}
