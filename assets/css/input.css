@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@font-face {
+  font-family: "remixicon";
+  src: url("../fonts/remixicon.woff2") format("woff2"),
+    url("../fonts/remixicon.woff") format("woff"),
+    url("../fonts/remixicon.ttf") format("truetype");
+  font-display: swap;
+}
+
+[class^="ri-"],
+[class*=" ri-"] {
+  font-family: "remixicon" !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
