@@ -41,15 +41,3 @@ Hasil build akan tersimpan di folder `dist`.
 ```bash
 npm run preview
 ```
-
-## Deploy ke GitHub Pages
-
-Project ini sudah disiapkan untuk GitHub Pages lewat GitHub Actions.
-
-1. Push kode ke branch `main`.
-2. Buka tab `Settings` di repository GitHub.
-3. Masuk ke `Pages`.
-4. Pada bagian `Build and deployment`, pilih `GitHub Actions`.
-5. Setelah itu setiap push ke `main` akan otomatis build dan publish ke GitHub Pages.
-
-Catatan: konfigurasi Vite memakai `base: './'` supaya asset tetap aman saat di-host di subpath GitHub Pages.
