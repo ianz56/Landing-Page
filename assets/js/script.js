@@ -1,14 +1,44 @@
-// Smooth scroll for navigation
+const header = document.querySelector("header");
+
+function getHeaderOffset() {
+  return header ? header.offsetHeight + 24 : 108;
+}
+
+function syncHeaderOffsetVar() {
+  document.documentElement.style.setProperty(
+    "--header-offset",
+    `${getHeaderOffset()}px`,
+  );
+}
+
+// Smooth scroll for navigation with sticky-header offset.
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
+    const hash = this.getAttribute("href");
+
+    if (!hash) {
+      return;
     }
+
+    e.preventDefault();
+
+    if (hash === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+
+    const target = document.querySelector(hash);
+    if (!target) {
+      return;
+    }
+
+    const targetY =
+      target.getBoundingClientRect().top + window.scrollY - getHeaderOffset();
+
+    window.scrollTo({
+      top: Math.max(targetY, 0),
+      behavior: "smooth",
+    });
   });
 });
 
@@ -47,6 +77,8 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
+  syncHeaderOffsetVar();
+
   const animatedElements = document.querySelectorAll(
     ".bg-white.p-6, .bg-white.rounded-2xl",
   );
@@ -57,3 +89,5 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(el);
   });
 });
+
+window.addEventListener("resize", syncHeaderOffsetVar);

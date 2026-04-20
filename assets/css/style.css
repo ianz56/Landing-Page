@@ -1,3 +1,12 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-offset, 96px);
+}
+
+[id] {
+  scroll-margin-top: var(--header-offset, 96px);
+}
+
 @keyframes fadeInUp {
         from {
           opacity: 0; /* jalanin nya di terminal "npm install" dulu kalo udah jalanin "npm run dev" */
